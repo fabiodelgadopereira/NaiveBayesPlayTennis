@@ -11,18 +11,3 @@ Para entender como construir um modelo de NB, vamos usar o exemplo do livro  (In
 Dado o conjunto de dados meteorológicos para prever a condição de reprodução. Existem 14 instâncias (ou exemplos)
 e 5 atributos. Todos os atributos são nominais.
 
-aparencia,temperatura,humidade,vento,play
-ensolarado,quente,alta,falso,não
-ensolarado,quente,alta,verdadeiro,não
-nublado,quente,alta,falso,sim
-chuvoso,suave,alta,falso,sim
-chuvoso,frio,normal,falso,sim
-chuvoso,frio,normal,verdadeiro,não
-nublado,frio,normal,verdadeiro,sim
-ensolarado,suave,alta,falso,não
-ensolarado,frio,normal,falso,sim
-chuvoso,suave,normal,falso,sim
-ensolarado,suave,normal,verdadeiro,sim
-nublado,suave,alta,verdadeiro,sim
-nublado,quente,normal,falso,sim
-chuvoso,suave,alta,verdadeiro,não
