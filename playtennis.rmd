@@ -1,0 +1,21 @@
+```{r}
+# Biblioteca necessaria para carregar dados
+library(e1071)
+
+# Carrega dados de um arquivo CSV, nesses dados que aplicaremos o modelo
+corpus_treinamento <-read.csv ("treinamento_play_tenis.csv", header = T, sep=",", stringsAsFactors=F)
+
+# Roda o modelo Naive Bayes
+modelo <- naiveBayes(play ~ ., data = corpus_treinamento)
+
+# Exibe resultado
+modelo
+
+# Após o modelo treinamos, carregamos uma entrada simples para testar o modelo
+entrada <- data.frame(aparencia = "ensolarado", temperatura = "quente", humidade = "alta" , vento = "falso" )
+
+# Exibe a classificação que o modelo Naive Bayes para a entrada do vetor acima
+resultado <- predict(modelo, entrada, type = "raw")
+resultado
+
+``` 
